@@ -6,7 +6,7 @@
     const numLowercase = parseInt(document.getElementById('lowercase').value);
     const numsymbols = parseInt(document.getElementById('lowercase').value);
 
-    const numbers = '047852369';
+    const numbers = '0478523691';
     const uppercase = 'AQZXSWEDCFVRTGBNHYUJMKOLP';
     const lowercase = 'plokijuhygtrfdewsaqzmnxbcv';
     const symbols = '!}|/]*@:{_[.;,<)^%->(';
@@ -30,6 +30,7 @@
     }
 
     const allCharacters = numbers + uppercase + lowercase + symbols;
+    
     for (let i = password.length; i < length; i++) {
         password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length));
     }

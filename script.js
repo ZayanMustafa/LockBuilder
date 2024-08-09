@@ -30,11 +30,11 @@
     }
 
     const allCharacters = numbers + uppercase + lowercase + symbols;
+    console.log(allCharacters)
     
     for (let i = password.length; i < length; i++) {
         password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length));
     }
-
-    password = password.split('').sort(() => Math.random() - 0.5).join('');
+    password = password.split('').sort(() => Math.random() -0.5 ).join(''); 
     document.getElementById('passwordShowHear').innerText = `Generated Password: ${password}`;
 });
